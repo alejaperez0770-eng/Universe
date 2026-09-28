@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#5b0711">
+<title>♡ our little universe.exe ♡</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" href="assets/icon-192.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="our universe">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="cursor-heart">♥</div>
+<div class="crt-noise"></div>
+<div class="stars" aria-hidden="true"></div>
+
+<div id="boot" class="boot-screen">
+  <div class="boot-card">
+    <div class="boot-logo">♡</div>
+    <p>LOADING OUR LITTLE UNIVERSE...</p>
+    <div class="boot-bar"><span></span></div>
+    <small>relationship.exe / date-finder.exe / chaos.dll</small>
+  </div>
+</div>
+
+<div class="site">
+  <div class="browser-bar">
+    <div class="traffic"><i></i><i></i><i></i></div>
+    <span class="address">https://our-little-universe.local/</span>
+    <button id="panic-btn" title="emergency">×</button>
+  </div>
+
+  <div class="mini-marquee"><span>♡ WELCOME TO OUR LITTLE INTERNET CORNER ♡ ★ NO BORING DATES ALLOWED ★ IF YOU DON'T KNOW WHAT TO DO, CLICK EVERYTHING ★ MADE WITH TOO MUCH LOVE ★</span></div>
+
+  <header class="masthead">
+    <div class="character character-left">
+      <div class="gif-frame">
+        <img src="assets/godzilla.gif" alt="Godzilla" onerror="this.hidden=true;this.parentElement.classList.add('empty-gif')">
+        <span class="gif-placeholder">🦖<small>godzilla.gif<br>goes here</small></span>
+      </div>
+      <span class="sticker">GODZILLA<br>♡ DESTROYER</span>
+    </div>
+
+    <div class="title-area">
+      <div class="tiny">EST. 2026 · TWO WEIRD PEOPLE ONLINE</div>
+      <h1>our little<br><i>universe</i></h1>
+      <p>una web para cuando queremos hacer algo<br>y ninguno sabe qué.</p>
+      <div class="blinkies">
+        <span>♡ LOVE WEB</span><span>✂ DIY</span><span>🎰 DATE ROULETTE</span><span>★ CHAOS</span><span>💌 PRIVATE-ish</span>
+      </div>
+      <div class="online-status"><b>● ONLINE</b> — aburrimiento detectado <span id="visitor-counter">visitor #000001</span></div>
+    </div>
+
+    <div class="character character-right">
+      <div class="gif-frame">
+        <img src="assets/miku.gif" alt="Hatsune Miku" onerror="this.hidden=true;this.parentElement.classList.add('empty-gif')">
+        <span class="gif-placeholder">🎀<small>miku.gif<br>goes here</small></span>
+      </div>
+      <span class="sticker">MIKU<br>♡ VOCALOID</span>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <button data-tab="home">HOME</button>
+    <button data-tab="roulette">🎰 RULETA</button>
+    <button data-tab="activities">✦ 2000+ IDEAS</button>
+    <button data-tab="crafts">✂ MANUALIDADES</button>
+    <button data-tab="arcade">🎮 ARCADE</button>
+    <button data-tab="scrapbook">📓 SCRAPBOOK</button>
+    <button data-tab="archive">📁 ARCHIVE</button>
+  </nav>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="tab-page active">
+      <div class="two-col">
+        <aside class="sidebar">
+          <div class="box profile">
+            <div class="box-title">♡ ABOUT US</div>
+            <p><b>status:</b> probablemente aburridos</p>
+            <p><b>current quest:</b> encontrar algo que hacer</p>
+            <p><b>difficulty:</b> no queremos pensar</p>
+            <p><b>location:</b> donde sea que estemos</p>
+            <div class="meter"><span></span></div>
+            <small>relationship.exe is running...</small>
+          </div>
+          <div class="box">
+            <div class="box-title">★ SITE MAP</div>
+            <a href="#" data-jump="roulette">→ roulette machine</a>
+            <a href="#" data-jump="activities">→ giant boredom archive</a>
+            <a href="#" data-jump="crafts">→ diy laboratory</a>
+            <a href="#" data-jump="arcade">→ arcade</a>
+            <a href="#" data-jump="scrapbook">→ scrapbook</a>
+          </div>
+          <div class="box now-playing">
+            <div class="box-title">♫ NOW PLAYING</div>
+            <div class="cassette">╭────────╮<br>│  ♫ ♫   │<br>╰────────╯</div>
+            <b id="now-playing">choose a vibe</b>
+            <button class="small-button" id="vibe-btn">CHANGE VIBE</button>
+          </div>
+          <div class="box warning">
+            <div class="box-title">⚠ IMPORTANT</div>
+            <p>If you say “me da igual”, the website chooses.</p>
+          </div>
+        </aside>
+
+        <div class="content">
+          <div class="hero-note">
+            <span class="tape"></span>
+            <div class="hand">dear you ♡</div>
+            <h2>Welcome to our tiny corner of the internet.</h2>
+            <p>Esta página existe para resolver el problema universal de las parejas: <b>“¿qué hacemos?”</b> seguido de 45 minutos de no hacer absolutamente nada.</p>
+            <p>Aquí hay citas, manualidades, juegos, cosas para hacer en casa, planes de $0, mini retos, conversaciones, comida, salidas y suficiente caos para no repetir la misma cosa.</p>
+            <div class="hero-buttons">
+              <button class="big-button" data-jump="roulette">🎰 DECIDE POR NOSOTROS</button>
+              <button class="ghost-button" id="surprise-btn">✨ SORPRÉNDEME</button>
+            </div>
+          </div>
+
+          <div class="desktop-icons">
+            <button data-jump="activities"><span>📁</span>date ideas</button>
+            <button data-jump="crafts"><span>✂️</span>craft lab</button>
+            <button data-jump="arcade"><span>🎮</span>arcade.exe</button>
+            <button data-jump="scrapbook"><span>📓</span>memories</button>
+            <button id="secret-icon"><span>💾</span>do not click</button>
+          </div>
+
+          <div class="polaroid-row">
+            <div class="polaroid tilt1"><div class="fake-photo">🦖 ♡ 🎀</div><span>us, probably</span></div>
+            <div class="polaroid tilt2"><div class="fake-photo">📷 ✦</div><span>another memory</span></div>
+            <div class="polaroid tilt3"><div class="fake-photo">🍜 ♡</div><span>food is important</span></div>
+          </div>
+
+          <div class="mini-dashboard">
+            <div><small>BOREDOM</small><strong id="boredom-meter">87%</strong><span class="bar"><i></i></span></div>
+            <div><small>DATE ENERGY</small><strong id="energy-meter">??</strong><span class="bar"><i></i></span></div>
+            <div><small>CHAOS LEVEL</small><strong id="chaos-meter">42%</strong><span class="bar"><i></i></span></div>
+          </div>
+
+          <div class="quote">“we don't need a perfect date.<br>we just need another little story.”</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROULETTE -->
+    <section id="roulette" class="tab-page">
+      <div class="page-head"><span>PAGE 02</span><h2>THE DATE ROULETTE</h2><span>NO REFUNDS ♡</span></div>
+      <div class="roulette-layout">
+        <div class="wheel-zone">
+          <div class="pointer">▼</div>
+          <div class="wheel" id="wheel"><div class="wheel-labels"></div><div class="wheel-center">♡<small>SPIN</small></div></div>
+          <button id="spin" class="big-button">SPIN THE DATE ♡</button>
+          <div class="roulette-hint">si sale algo que ya hicieron → <b>REROLL</b>, no discutir.</div>
+        </div>
+        <div class="result-card" id="result-card">
+          <div class="tiny">YOUR DESTINY</div>
+          <h3 id="result-title">giren la ruleta</h3>
+          <p id="result-text">La máquina todavía no sabe qué les toca.</p>
+          <div class="result-meta"><span id="result-cost">$?</span><span id="result-time">? min</span><span id="result-energy">???</span></div>
+          <div class="result-actions">
+            <button id="save-result" class="small-button">♡ GUARDAR PLAN</button>
+            <button id="reroll" class="ghost-button">↻ REROLL</button>
+          </div>
+        </div>
+      </div>
+      <div class="roulette-controls">
+        <label>MOOD<select id="mood"><option value="all">cualquier cosa</option><option>Casa</option><option>Manualidad</option><option>Juego</option><option>Creativo</option><option>Música</option><option>Comida</option><option>Salir</option><option>Gratis</option><option>Noche</option><option>Romántico</option><option>Caos</option><option>Conversación</option><option>Aventura</option></select></label>
+        <label>ENERGÍA<select id="energy"><option value="all">la que tengamos</option><option value="low">cero</option><option value="mid">normal</option><option value="high">quiero hacer cosas</option></select></label>
+        <label>PRESUPUESTO<select id="budget"><option value="all">cualquiera</option><option value="0">$0</option><option value="low">≤ $10</option><option value="mid">$10–30</option><option value="high">$30+</option></select></label>
+      </div>
+      <div class="tiny-note">RULE #01: si sale algo raro, tienen 30 segundos para decir que sí.</div>
+    </section>
+
+    <!-- ACTIVITIES -->
+    <section id="activities" class="tab-page">
+      <div class="page-head"><span>PAGE 03</span><h2>THE GIANT BOREDOM ARCHIVE</h2><span id="total-label">2000+ IDEAS</span></div>
+      <div class="filter-chips" id="category-chips"></div>
+      <div class="toolbar">
+        <input id="search" type="search" placeholder="🔎 busca: comida, casa, $0, dibujo, noche...">
+        <select id="filter"><option value="all">todas las categorías</option></select>
+        <select id="energy-filter"><option value="all">cualquier energía</option><option value="low">cero energía</option><option value="mid">energía normal</option><option value="high">alta energía</option></select>
+        <button id="random-one" class="small-button">🎲 RANDOM</button>
+      </div>
+      <div id="activity-count" class="tiny-note"></div>
+      <div id="activity-grid" class="activity-grid"></div>
+    </section>
+
+    <!-- CRAFTS -->
+    <section id="crafts" class="tab-page">
+      <div class="page-head"><span>PAGE 04</span><h2>DIY LABORATORY</h2><span>✂ GET MESSY</span></div>
+      <div class="craft-intro">
+        <div class="lab-character"><span>🦖</span><span>♡</span><span>🎀</span></div>
+        <div><b>PROJECT: MAKE SOMETHING</b><p>Para esos días en los que estás en su casa y tu cerebro dice “estoy aburrida”. Elige un proyecto y conviértanlo en un recuerdo.</p></div>
+      </div>
+      <div class="craft-tools">
+        <button class="small-button" id="craft-random">🎲 ELIGE UNA MANUALIDAD</button>
+        <button class="ghost-button" id="craft-spin">✂️ DIY WHEEL</button>
+        <span id="craft-result">esperando caos...</span>
+      </div>
+      <div class="craft-board" id="craft-board"></div>
+    </section>
+
+    <!-- ARCADE -->
+    <section id="arcade" class="tab-page">
+      <div class="page-head"><span>PAGE 05</span><h2>ARCADE.EXE</h2><span>INSERT COIN ♡</span></div>
+      <div class="arcade-grid">
+        <div class="arcade-window">
+          <div class="window-title">♡ COUPLE QUIZ</div>
+          <p>Respondan por separado. Luego comparen.</p>
+          <div id="quiz-box"></div>
+          <button class="small-button" id="next-quiz">NEXT QUESTION</button>
+        </div>
+        <div class="arcade-window">
+          <div class="window-title">🎲 WHO WOULD...</div>
+          <p id="would-text">¿Quién sobreviviría primero a un apocalipsis?</p>
+          <div class="versus"><button id="person-a">YO</button><span>VS</span><button id="person-b">TÚ</button></div>
+          <button class="ghost-button" id="would-next">NEW QUESTION</button>
+        </div>
+        <div class="arcade-window full">
+          <div class="window-title">🧨 CHAOS GENERATOR</div>
+          <p>Presiona. No preguntes.</p>
+          <div id="chaos-output" class="chaos-output">...</div>
+          <button class="big-button" id="chaos-btn">DO NOT PRESS</button>
+        </div>
+        <div class="arcade-window">
+          <div class="window-title">💗 COMPLIMENT MACHINE</div>
+          <div id="compliment" class="machine-output">insert love</div>
+          <button class="small-button" id="compliment-btn">GENERATE</button>
+        </div>
+        <div class="arcade-window">
+          <div class="window-title">🪙 COIN FLIP</div>
+          <div id="coin" class="coin">?</div>
+          <button class="small-button" id="coin-btn">FLIP</button>
+        </div>
+        <div class="arcade-window">
+          <div class="window-title">🎯 30 SECOND CHALLENGE</div>
+          <div id="challenge" class="machine-output">press start</div>
+          <button class="small-button" id="challenge-btn">START</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCRAPBOOK -->
+    <section id="scrapbook" class="tab-page">
+      <div class="page-head"><span>PAGE 06</span><h2>SCRAPBOOK.EXE</h2><span>ADD YOUR LORE</span></div>
+      <div class="scrapbook-grid">
+        <div class="scrap-card photo-drop">
+          <div class="paperclip">⌇</div>
+          <h3>our future photos</h3>
+          <label class="upload-box">📷 ADD A PHOTO<input id="photo-upload" type="file" accept="image/*" multiple hidden></label>
+          <div id="photo-wall"></div>
+          <small>Las fotos se quedan en este navegador. Para llevarlas a otro dispositivo, guárdalas aparte.</small>
+        </div>
+        <div class="scrap-card">
+          <h3>💌 tiny guestbook</h3>
+          <input id="guest-name" placeholder="nombre / apodo">
+          <textarea id="guest-message" placeholder="deja una nota para el otro..."></textarea>
+          <button class="small-button" id="guest-save">PIN IT</button>
+          <div id="guestbook"></div>
+        </div>
+        <div class="scrap-card">
+          <h3>📌 things I love</h3>
+          <div class="checklist" id="love-list"></div>
+          <input id="love-input" placeholder="agrega otra cosa + enter">
+        </div>
+        <div class="scrap-card">
+          <h3>🗺️ places we want to go</h3>
+          <div id="places"></div>
+          <div class="inline-add"><input id="place-input" placeholder="lugar"><button class="small-button" id="place-add">+</button></div>
+        </div>
+        <div class="scrap-card full">
+          <h3>📅 DATE CALENDAR</h3>
+          <p class="tiny-note">Marca las citas que sí hicieron. El navegador las guarda.</p>
+          <div id="calendar"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARCHIVE -->
+    <section id="archive" class="tab-page">
+      <div class="page-head"><span>PAGE 07</span><h2>OUR ARCHIVE</h2><span>PRIVATE-ish ♡</span></div>
+      <div class="archive-grid">
+        <article class="letter"><div class="script">a letter to you</div><p>Para mi persona favorita:</p><p>Gracias por existir en este pequeño universo conmigo. Por los días buenos, los días raros, las comidas, los viajes sin rumbo y hasta por las veces que no sabemos qué hacer.</p><p>Tenemos un montón de historias que todavía no existen.</p><p class="right">love, us ♡</p></article>
+        <article class="archive-card"><div class="record">●</div><h3>songs that remind me of you</h3><p>♫ canción #01</p><p>♫ canción #02</p><p>♫ canción #03</p><button class="small-button" id="song-btn">PLAY THE VIBE</button></article>
+        <article class="archive-card"><h3>10 tiny things</h3><ol><li>una risa específica</li><li>un snack</li><li>una canción</li><li>un lugar</li><li>un inside joke</li><li>una foto</li><li>una frase</li><li>una costumbre</li><li>algo que todavía no pasó</li><li>una historia futura</li></ol></article>
+        <article class="archive-card red"><h3>future memories</h3><p>✦ nuestra próxima aventura</p><p>✦ una manualidad horrible</p><p>✦ una foto que todavía no existe</p><p>✦ un lugar al que iremos</p></article>
+      </div>
+      <div class="saved-section">
+        <div class="page-head"><span>LOCAL STORAGE</span><h2>♡ SAVED PLANS</h2><span id="saved-count">0</span></div>
+        <div id="saved-plans" class="saved-plans"></div>
+      </div>
+      <div class="saved-section">
+        <div class="page-head"><span>SYNC</span><h2>📲 LLEVAR A OTRO TELÉFONO</h2><span>CÓDIGO</span></div>
+        <div class="sync-box">
+          <p>Esta página guarda todo en cada teléfono por separado. Para pasar planes, notas, lista y calendario al otro teléfono: toca <b>COPIAR CÓDIGO</b>, mándalo por WhatsApp y pégalo allá.</p>
+          <label class="tiny-note"><input type="checkbox" id="sync-photos"> incluir fotos (el código será mucho más largo)</label>
+          <textarea id="sync-code" placeholder="aquí aparece el código, o pega uno para importar"></textarea>
+          <div class="result-actions">
+            <button class="small-button" id="sync-export">COPIAR CÓDIGO</button>
+            <button class="ghost-button" id="sync-import">IMPORTAR CÓDIGO</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>♡ OUR LITTLE UNIVERSE ♡ · GODZILLA × HATSUNE MIKU EDITION · <span id="year"></span></div>
+    <div class="footer-links"><span>best viewed with curiosity</span> · <span>made for two</span> · <span>do not take life too seriously</span></div>
+  </footer>
+</div>
+
+<!-- floating windows -->
+<div id="achievement" class="achievement"><b>ACHIEVEMENT UNLOCKED!</b><span id="achievement-text">you clicked something.</span></div>
+<div id="godzilla-popup" class="popup-window">
+  <div class="window-title">🦖 GODZILLA.EXE <button class="close-popup">×</button></div>
+  <p>GODZILLA HAS APPEARED.</p>
+  <pre>      /\_/\\
+   __/ o o \__
+  /     ^     \
+ /  |       |  \
+    |__| |__|
+       ROAR</pre>
+  <button class="small-button" id="godzilla-roar">ROAR BACK</button>
+</div>
+
+<script src="script.js"></script>
+<script>if("serviceWorker"in navigator&&location.protocol.startsWith("http"))addEventListener("load",()=>navigator.serviceWorker.register("service-worker.js").catch(()=>{}))</script>
+</body>
+</html>
